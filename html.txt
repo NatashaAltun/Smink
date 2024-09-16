@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sminkbutik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Välkommen till Sminkbutiken!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#products">Produkter</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Nyheter</h2>
+            <p>Upptäck våra senaste sminkprodukter!</p>
+        </section>
+
+        <section id="products">
+            <h2>Våra Produkter</h2>
+            <div class="product">
+                <img src="foundation.jpg" alt="Foundation">
+                <h3>Foundation</h3>
+                <p>Pris: 299 kr</p>
+                <button onclick="addToCart('Foundation')">Lägg i varukorg</button>
+            </div>
+            <div class="product">
+                <img src="lipstick.jpg" alt="Läppstift">
+                <h3>Läppstift</h3>
+                <p>Pris: 199 kr</p>
+                <button onclick="addToCart('Läppstift')">Lägg i varukorg</button>
+            </div>
+            <!-- Lägg till fler produkter här -->
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form id="contact-form">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Skicka</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sminkbutik. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

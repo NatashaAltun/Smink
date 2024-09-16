@@ -1,0 +1,9 @@
+function addToCart(productName) {
+    alert(productName + ' har lagts till i din varukorg!');
+}
+
+// Event listener för kontaktformuläret
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Tack för ditt meddelande!');
+});
